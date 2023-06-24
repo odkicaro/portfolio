@@ -240,10 +240,10 @@
 </template>
 
 <script lang="ts" setup>
-import {ref} from 'vue'
+// import {ref} from 'vue'
 
 
-  const openExternal = (url) => {
+  const openExternal = (url:string) => {
 
     window.open(url)
     
