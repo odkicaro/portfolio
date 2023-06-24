@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+    .flex-center {
+        display: flex;
+        align-items: center;
+    }
+
+    .center {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .circleButton{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 500px;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        /* circle button */
+            .circleButton{
+                cursor: pointer;
+            }
+
+            .circleButton:active{
+                scale: 0.950
+            }
+            
+        /*  */
+
+
+        
+    }
+    /* ... */
+  }
