@@ -14,82 +14,85 @@
 
     <section class="md:p-[40px] md:pr-[60px] rounded-[32px] p-[32px] section-myself row-start-2 row-end-2 col-start-1 col-end-13 md:col-end-7 block">
 
-      <div class="md:text-[40px] text-[32px] leading-[1.1] tracking-[-0.03em] font-normal">Hi, I'm Daniel</div>
+      <div class="md:text-[40px] text-[32px] leading-[1.1] tracking-[-0.03em] font-normal">Hi, <strong class="text-black">I'm Daniel</strong></div>
 
       <div class="md:text-[40px] text-[32px] leading-[1.1] tracking-[-0.03em] mt-3">A Full-stack web developer</div>
 
-      <div class="md:text-[18px] text-[16px] mt-[48px] text-[#444343]">I’m very enthusiastic about the coding world, that’s why I became a self taught developer once I knew everything that it could be done within just a few lines of code.</div>
+      <div class="md:text-[20px] text-[16px] mt-[48px] text-[#444343]">I’m very enthusiastic about the coding world, that’s why I became a self taught developer once I knew everything that it could be done within just a few lines of code.</div>
 
-      <div class="[&>span]:h-[52px] [&>span]:w-[52px] font-semibold text-xs md:text-sm [&>span]:gap-3 [&>span]:px-6 [&>span]:rounded-full [&>span]:bg-[#fafafa] [&>span]:flex [&>span]:items-center [&>span]:justify-center gap-4 mt-16 flex flex-wrap">
+      <div class=" font-semibold text-xs md:text-sm  gap-4 gap-y-8 mt-16 flex flex-wrap">
 
         <div @click="goEmail()" class="button-contact-me">Contact me</div>
 
-        <span class="relative group" tabindex="0">
-          
-          <div>
-            <svg style="width: 24px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor"><path d="M2 11.25C2 8.35 4.015 6 6.5 6S11 8.35 11 11.25V20H4.233C3 20 2 18.834 2 17.395V11.25Z" opacity=".5"/><path d="M11 11.25V20h8.793C21.012 20 22 18.847 22 17.425V11.25C22 8.35 19.985 6 17.5 6h-11C8.985 6 11 8.35 11 11.25Z" opacity=".8"/><path d="M9.5 20v2a.75.75 0 0 0 1.5 0v-2H9.5Zm5.5 0h-1.5v2a.75.75 0 0 0 1.5 0v-2Z"/><path fill-rule="evenodd" d="M4.25 16a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Zm13.135-9.415l.256-.052a2.181 2.181 0 0 1 1.24.115c.69.277 1.446.328 2.165.148l.061-.015c.524-.131.893-.618.893-1.178v-2.13c0-.738-.664-1.282-1.355-1.109c-.396.1-.812.071-1.193-.081l-.073-.03a3.517 3.517 0 0 0-2-.185l-.449.09c-.54.108-.93.6-.93 1.17v6.953c0 .397.31.719.692.719a.706.706 0 0 0 .693-.72V6.586Z" clip-rule="evenodd"/></g></svg>
-          </div>
+        <div class="flex flex-wrap gap-4 [&>span]:h-[52px] [&>span]:w-[52px] [&>span]:gap-3 [&>span]:px-6 [&>span]:rounded-full [&>span]:bg-[#fafafa] [&>span]:flex [&>span]:items-center [&>span]:justify-center">
 
-          <div
-            class="absolute top-[90%] left-[20%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-black text-white px-4 py-4 rounded-md origin-left md:cursor-pointer z-50" 
-            @click="goEmail()"
-          >
-
-            <div class=" flex items-center gap-3" >
-
-              <div>danielcoglitore@gmail.com</div>
-
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M1 18V2h20v7h-2V6l-8 5l-8-5v10h10v2H1Zm10-9l8-5H3l8 5Zm8 13q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11q1.05 0 1.775.725T20 13.5V18h-2v-4.5q0-.2-.15-.35T17.5 13q-.2 0-.35.15t-.15.35V18q0 .825.588 1.413T19 20q.825 0 1.413-.588T21 18v-4h2v4q0 1.65-1.175 2.825T19 22ZM3 4v12V4Z"/></svg>
-
+          <span class="relative group" tabindex="0">
+            
+            <div>
+              <svg style="width: 24px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor"><path d="M2 11.25C2 8.35 4.015 6 6.5 6S11 8.35 11 11.25V20H4.233C3 20 2 18.834 2 17.395V11.25Z" opacity=".5"/><path d="M11 11.25V20h8.793C21.012 20 22 18.847 22 17.425V11.25C22 8.35 19.985 6 17.5 6h-11C8.985 6 11 8.35 11 11.25Z" opacity=".8"/><path d="M9.5 20v2a.75.75 0 0 0 1.5 0v-2H9.5Zm5.5 0h-1.5v2a.75.75 0 0 0 1.5 0v-2Z"/><path fill-rule="evenodd" d="M4.25 16a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Zm13.135-9.415l.256-.052a2.181 2.181 0 0 1 1.24.115c.69.277 1.446.328 2.165.148l.061-.015c.524-.131.893-.618.893-1.178v-2.13c0-.738-.664-1.282-1.355-1.109c-.396.1-.812.071-1.193-.081l-.073-.03a3.517 3.517 0 0 0-2-.185l-.449.09c-.54.108-.93.6-.93 1.17v6.953c0 .397.31.719.692.719a.706.706 0 0 0 .693-.72V6.586Z" clip-rule="evenodd"/></g></svg>
             </div>
 
-          </div>
-
-        </span>
-
-        <span class="relative group" tabindex="0">
-          
-          <div>
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M13.95 4.24C11.86 1 7.58.04 4.27 2.05C1.04 4.06 0 8.44 2.09 11.67l.17.26l-.7 2.62l2.62-.7l.26.17c1.13.61 2.36.96 3.58.96c1.31 0 2.62-.35 3.75-1.05c3.23-2.1 4.19-6.39 2.18-9.71Zm-1.83 6.74c-.35.52-.79.87-1.4.96c-.35 0-.79.17-2.53-.52c-1.48-.7-2.71-1.84-3.58-3.15c-.52-.61-.79-1.4-.87-2.19c0-.7.26-1.31.7-1.75c.17-.17.35-.26.52-.26h.44c.17 0 .35 0 .44.35c.17.44.61 1.49.61 1.58c.09.09.05.76-.35 1.14c-.22.25-.26.26-.17.44c.35.52.79 1.05 1.22 1.49c.52.44 1.05.79 1.66 1.05c.17.09.35.09.44-.09c.09-.17.52-.61.7-.79c.17-.17.26-.17.44-.09l1.4.7c.17.09.35.17.44.26c.09.26.09.61-.09.87Z"/></svg>
-          </div>
-
-          <div
-            class="absolute bottom-[20%] left-[50%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-white rounded-md origin-bottom-left z-50 shadow-md" 
-            style="box-shadow: 0 0 10px gray;"
-          >
-
-            <div class="w-[400px] h-[400px]">
-              <img class="w-full rounded-md" src="./assets/images/whastapp-qr-code.png" >
-            </div>
-
-            <div 
-              class="flex items-center gap-3 absolute top-[102%] origin-center left-1/2 translate-x-[-50%] md:cursor-pointer bg-black text-white px-4 py-2 rounded-md group" 
-              @click="copyLink()"
-              tabindex="0"
+            <div
+              class="absolute top-[90%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-slate-800 text-white px-4 py-4 rounded-md  md:cursor-pointer z-50" 
+              @click="goEmail()"
             >
-              <div>+56930842821</div>
 
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white group-focus-within:hidden" viewBox="0 0 24 24"><path fill="currentColor" d="M5 22q-.825 0-1.413-.588T3 20V6h2v14h11v2H5Zm4-4q-.825 0-1.413-.588T7 16V4q0-.825.588-1.413T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.588 1.413T18 18H9Z"/></svg>
+              <div class=" flex items-center gap-3" >
 
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white hidden group-focus-within:flex" viewBox="0 0 24 24"><path fill="currentColor" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
-              
+                <div>danielcoglitore@gmail.com</div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M1 18V2h20v7h-2V6l-8 5l-8-5v10h10v2H1Zm10-9l8-5H3l8 5Zm8 13q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11q1.05 0 1.775.725T20 13.5V18h-2v-4.5q0-.2-.15-.35T17.5 13q-.2 0-.35.15t-.15.35V18q0 .825.588 1.413T19 20q.825 0 1.413-.588T21 18v-4h2v4q0 1.65-1.175 2.825T19 22ZM3 4v12V4Z"/></svg>
+
+              </div>
+
             </div>
 
-          </div>
+          </span>
 
-        </span>
+          <span class="md:relative group" tabindex="0">
+            
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M13.95 4.24C11.86 1 7.58.04 4.27 2.05C1.04 4.06 0 8.44 2.09 11.67l.17.26l-.7 2.62l2.62-.7l.26.17c1.13.61 2.36.96 3.58.96c1.31 0 2.62-.35 3.75-1.05c3.23-2.1 4.19-6.39 2.18-9.71Zm-1.83 6.74c-.35.52-.79.87-1.4.96c-.35 0-.79.17-2.53-.52c-1.48-.7-2.71-1.84-3.58-3.15c-.52-.61-.79-1.4-.87-2.19c0-.7.26-1.31.7-1.75c.17-.17.35-.26.52-.26h.44c.17 0 .35 0 .44.35c.17.44.61 1.49.61 1.58c.09.09.05.76-.35 1.14c-.22.25-.26.26-.17.44c.35.52.79 1.05 1.22 1.49c.52.44 1.05.79 1.66 1.05c.17.09.35.09.44-.09c.09-.17.52-.61.7-.79c.17-.17.26-.17.44-.09l1.4.7c.17.09.35.17.44.26c.09.26.09.61-.09.87Z"/></svg>
+            </div>
 
-        <span 
-          class="relative group md:cursor-pointer" 
-          tabindex="0"
-          @click="openExternal('https://github.com/odkicaro')"
-        >
-          
-          <div>
-            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
-          </div>
+            <div
+              class="absolute md:bottom-[20%] left-1/2 -translate-x-[50%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-white rounded-md z-50 shadow-md" 
+              style="box-shadow: 0 0 10px gray;"
+            >
 
-        </span>
+              <div class="md:w-[400px] md:h-[400px] w-[300px] h-[300px]">
+                <img class="w-full rounded-md" src="./assets/images/whastapp-qr-code.png" >
+              </div>
+
+              <div 
+                class="flex items-center gap-3 absolute top-[99%] origin-center left-1/2 translate-x-[-50%] md:cursor-pointer bg-slate-700 text-white px-4 py-2 rounded-md group" 
+                @click="copyLink()"
+                tabindex="0"
+              >
+
+                <div>+56930842821</div>
+
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white" viewBox="0 0 24 24"><path fill="currentColor" d="M5 22q-.825 0-1.413-.588T3 20V6h2v14h11v2H5Zm4-4q-.825 0-1.413-.588T7 16V4q0-.825.588-1.413T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.588 1.413T18 18H9Z"/></svg>
+                
+              </div>
+
+            </div>
+
+          </span>
+
+          <span 
+            class="relative group md:cursor-pointer" 
+            tabindex="0"
+            @click="openExternal('https://github.com/odkicaro')"
+          >
+            
+            <div>
+              <svg class="w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0c4.42 0 8 3.58 8 8a8.013 8.013 0 0 1-5.45 7.59c-.4.08-.55-.17-.55-.38c0-.27.01-1.13.01-2.2c0-.75-.25-1.23-.54-1.48c1.78-.2 3.65-.88 3.65-3.95c0-.88-.31-1.59-.82-2.15c.08-.2.36-1.02-.08-2.12c0 0-.67-.22-2.2.82c-.64-.18-1.32-.27-2-.27c-.68 0-1.36.09-2 .27c-1.53-1.03-2.2-.82-2.2-.82c-.44 1.1-.16 1.92-.08 2.12c-.51.56-.82 1.28-.82 2.15c0 3.06 1.86 3.75 3.64 3.95c-.23.2-.44.55-.51 1.07c-.46.21-1.61.55-2.33-.66c-.15-.24-.6-.83-1.23-.82c-.67.01-.27.38.01.53c.34.19.73.9.82 1.13c.16.45.68 1.31 2.69.94c0 .67.01 1.3.01 1.49c0 .21-.15.45-.55.38A7.995 7.995 0 0 1 0 8c0-4.42 3.58-8 8-8Z"/></svg>
+            </div>
+
+          </span>
+
+        </div>
 
       </div>
     
@@ -127,7 +130,7 @@
           <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m9 4v.01"/><path d="M12 13a2 2 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/></g></svg>
         </div>
 
-        <div>A personal project, in which I've worked for a couple of months to gain some experience. I built it based on what I'd like to find on a modern application, so one day I'll hopefully continue working on this project.
+        <div class="md:text-[16px]">A personal project, in which I've worked for a couple of months to gain some experience. I built it based on what I'd like to find on a modern application, so one day I'll hopefully continue working on this project.
         </div>
 
       </div>
@@ -160,7 +163,7 @@
 
       </div>
 
-      <div class="mt-3" style="color: #757575; max-width: 800px;">I'm always very enthusiastic into learning new things that'll improve my knowledge allowing me to implement each time more complex solutions</div>
+      <div class="mt-3 " style="max-width: 600px;">I'm always enthusiastic into learning new things that'll improve my knowledge, allowing me to implement more complex solutions</div>
 
       <div style="padding: 20px; border-radius: 20px; margin-top: 20px;">
 
