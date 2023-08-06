@@ -14,17 +14,67 @@
 
     <section class="md:p-[40px] md:pr-[60px] rounded-[32px] p-[32px] section-myself row-start-2 row-end-2 col-start-1 col-end-13 md:col-end-7 block">
 
-      <div class="md:text-[40px] text-[32px] font-medium leading-[1.1] tracking-[-0.03em]">Hello, I’m Daniel, a Web Developer with 2 years of experience.</div>
-      <div class="md:text-[18px] text-[16px] mt-[48px] text-[#444343]">I’m very enthusiastic about the coding world, that’s why I became a self taught developer once I knew everything that it could be done with just a single computer.</div>
+      <div class="md:text-[40px] text-[32px] leading-[1.1] tracking-[-0.03em] font-normal">Hi, I'm Daniel</div>
 
-      <div class="[&>span]:h-[52px] [&>span]:w-[52px] font-semibold text-xs md:text-sm [&>span]:gap-3 [&>span]:px-6 md:[&>span]:cursor-pointer [&>span]:rounded-full [&>span]:bg-[#fafafa] [&>span]:flex [&>span]:items-center [&>span]:justify-center gap-4 mt-16 flex flex-wrap">
+      <div class="md:text-[40px] text-[32px] leading-[1.1] tracking-[-0.03em] mt-3">A Full-stack web developer</div>
+
+      <div class="md:text-[18px] text-[16px] mt-[48px] text-[#444343]">I’m very enthusiastic about the coding world, that’s why I became a self taught developer once I knew everything that it could be done within just a few lines of code.</div>
+
+      <div class="[&>span]:h-[52px] [&>span]:w-[52px] font-semibold text-xs md:text-sm [&>span]:gap-3 [&>span]:px-6 [&>span]:rounded-full [&>span]:bg-[#fafafa] [&>span]:flex [&>span]:items-center [&>span]:justify-center gap-4 mt-16 flex flex-wrap">
 
         <div @click="goEmail()" class="button-contact-me">Contact me</div>
 
-        <span @click="goEmail()">
+        <span class="relative group" tabindex="0">
           
           <div>
             <svg style="width: 24px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="currentColor"><path d="M2 11.25C2 8.35 4.015 6 6.5 6S11 8.35 11 11.25V20H4.233C3 20 2 18.834 2 17.395V11.25Z" opacity=".5"/><path d="M11 11.25V20h8.793C21.012 20 22 18.847 22 17.425V11.25C22 8.35 19.985 6 17.5 6h-11C8.985 6 11 8.35 11 11.25Z" opacity=".8"/><path d="M9.5 20v2a.75.75 0 0 0 1.5 0v-2H9.5Zm5.5 0h-1.5v2a.75.75 0 0 0 1.5 0v-2Z"/><path fill-rule="evenodd" d="M4.25 16a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 0 1.5H5a.75.75 0 0 1-.75-.75Zm13.135-9.415l.256-.052a2.181 2.181 0 0 1 1.24.115c.69.277 1.446.328 2.165.148l.061-.015c.524-.131.893-.618.893-1.178v-2.13c0-.738-.664-1.282-1.355-1.109c-.396.1-.812.071-1.193-.081l-.073-.03a3.517 3.517 0 0 0-2-.185l-.449.09c-.54.108-.93.6-.93 1.17v6.953c0 .397.31.719.692.719a.706.706 0 0 0 .693-.72V6.586Z" clip-rule="evenodd"/></g></svg>
+          </div>
+
+          <div
+            class="absolute top-[90%] left-[20%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-black text-white px-4 py-4 rounded-md origin-left md:cursor-pointer z-50" 
+            @click="goEmail()"
+          >
+
+            <div class=" flex items-center gap-3" >
+
+              <div>danielcoglitore@gmail.com</div>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M1 18V2h20v7h-2V6l-8 5l-8-5v10h10v2H1Zm10-9l8-5H3l8 5Zm8 13q-1.65 0-2.825-1.175T15 18v-4.5q0-1.05.725-1.775T17.5 11q1.05 0 1.775.725T20 13.5V18h-2v-4.5q0-.2-.15-.35T17.5 13q-.2 0-.35.15t-.15.35V18q0 .825.588 1.413T19 20q.825 0 1.413-.588T21 18v-4h2v4q0 1.65-1.175 2.825T19 22ZM3 4v12V4Z"/></svg>
+
+            </div>
+
+          </div>
+
+        </span>
+
+        <span class="relative group" tabindex="0">
+          
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 16 16"><path fill="currentColor" d="M13.95 4.24C11.86 1 7.58.04 4.27 2.05C1.04 4.06 0 8.44 2.09 11.67l.17.26l-.7 2.62l2.62-.7l.26.17c1.13.61 2.36.96 3.58.96c1.31 0 2.62-.35 3.75-1.05c3.23-2.1 4.19-6.39 2.18-9.71Zm-1.83 6.74c-.35.52-.79.87-1.4.96c-.35 0-.79.17-2.53-.52c-1.48-.7-2.71-1.84-3.58-3.15c-.52-.61-.79-1.4-.87-2.19c0-.7.26-1.31.7-1.75c.17-.17.35-.26.52-.26h.44c.17 0 .35 0 .44.35c.17.44.61 1.49.61 1.58c.09.09.05.76-.35 1.14c-.22.25-.26.26-.17.44c.35.52.79 1.05 1.22 1.49c.52.44 1.05.79 1.66 1.05c.17.09.35.09.44-.09c.09-.17.52-.61.7-.79c.17-.17.26-.17.44-.09l1.4.7c.17.09.35.17.44.26c.09.26.09.61-.09.87Z"/></svg>
+          </div>
+
+          <div
+            class="absolute bottom-[20%] left-[50%] opacity-0 scale-0 group-hover:opacity-100 group-hover:scale-100 group-focus:opacity-100 group-focus:scale-100 duration-100 bg-white rounded-md origin-bottom-left z-50 shadow-md" 
+            style="box-shadow: 0 0 10px gray;"
+          >
+
+            <div class="w-[400px] h-[400px]">
+              <img class="w-full rounded-md" src="./assets/images/whastapp-qr-code.png" >
+            </div>
+
+            <div 
+              class="flex items-center gap-3 absolute top-[102%] origin-center left-1/2 translate-x-[-50%] md:cursor-pointer bg-black text-white px-4 py-2 rounded-md group" 
+              @click="copyLink()"
+              tabindex="0"
+            >
+              <div>+56930842821</div>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white group-focus-within:hidden" viewBox="0 0 24 24"><path fill="currentColor" d="M5 22q-.825 0-1.413-.588T3 20V6h2v14h11v2H5Zm4-4q-.825 0-1.413-.588T7 16V4q0-.825.588-1.413T9 2h9q.825 0 1.413.588T20 4v12q0 .825-.588 1.413T18 18H9Z"/></svg>
+
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 text-white hidden group-focus-within:flex" viewBox="0 0 24 24"><path fill="currentColor" d="m10.6 16.6l7.05-7.05l-1.4-1.4l-5.65 5.65l-2.85-2.85l-1.4 1.4l4.25 4.25ZM12 22q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"/></svg>
+              
+            </div>
+
           </div>
 
         </span>
@@ -33,34 +83,50 @@
     
     </section>
 
-    <section class="md:p-[40px] p-[32px] rounded-[32px] bg-[#5c7ae5] text-white md:cursor-pointer md:row-start-2 md:row-end-2 md:col-start-7 md:col-end-13 row-start-3 row-end-3 col-start-1 col-end-13 block" @click="openExternal('https://ciciar.com')">
+    <section 
+      class="md:p-[40px] p-[32px] rounded-[32px] bg-[#3b59c3] text-white md:cursor-pointer md:row-start-2 md:row-end-2 md:col-start-7 md:col-end-13 row-start-3 row-end-3 col-start-1 col-end-13 block hover:scale-[1.01] duration-200 hover:shadow-2xl shadow-black active:scale-[0.98] relative group" 
+      @click="openExternal('https://ciciar.com')"
+    >
 
       <div class="flex items-center justify-between gap-5 relative pt-[20px] md:pt-0">
 
         <div>
 
-          <div style="font-weight: 900; font-size: 20px;">Ciciar</div>
-          <div style="font-size: 15px;">Reserves and ticketing sales software for all type of business.</div>
+          
+          <div style="font-weight: 900; font-size: 24px;" class="">Ciciar</div>
+          
+          <div style="font-size: 16px; ">All-in-one reserve software for all type of business.</div>
 
         </div>
 
-        <div class="h-[46px] w-[46px] bg-white rounded-full center absolute top-0 right-0">
-          <svg style="color: black; width: 20px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m16 8.4l-8.875 8.9q-.3.3-.713.3t-.712-.3q-.3-.3-.3-.713t.3-.712L14.6 7H7q-.425 0-.713-.288T6 6q0-.425.288-.713T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.713-.288T16 16V8.4Z"/></svg>
+        <div class="h-[46px] w-[46px] border border-[#91a3df] rounded-full center absolute top-0 right-0">
+          <svg style="color: white; width: 20px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="m16 8.4l-8.875 8.9q-.3.3-.713.3t-.712-.3q-.3-.3-.3-.713t.3-.712L14.6 7H7q-.425 0-.713-.288T6 6q0-.425.288-.713T7 5h10q.425 0 .713.288T18 6v10q0 .425-.288.713T17 17q-.425 0-.713-.288T16 16V8.4Z"/></svg>
         </div>
 
       </div>
 
-      <div style="margin-top: 40px;">
-        <img src="./assets/images/ciciar_ui_captures.png" class="md:w-[80%] w-full" >
+      <div style="margin-top: 50px;">
+        <img src="./assets/images/ciciar_ui_captures.png" class="md:w-[90%] w-full" >
       </div>
 
-      <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-2 mt-6 p-4 border rounded-xl">
+      <div class="flex flex-col items-center text-center md:text-left md:flex-row md:items-start gap-2 mt-12 p-4 rounded-xl bg-[#243f95]">
 
         <div>
           <svg style="width: 20px;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m9 4v.01"/><path d="M12 13a2 2 0 0 0 .914-3.782a1.98 1.98 0 0 0-2.414.483"/></g></svg>
         </div>
 
-        <div>For the last 2 years, I was working for Ciciar which for me it was a bit challenging since it was my first job as a developer, but I got to learn a lot of things that I know is going to be useful for my future projects.</div>
+        <div>A personal project, in which I've worked for a couple of months to gain some experience. I built it based on what I'd like to find on a modern application, so one day I'll hopefully continue working on this project.
+        </div>
+
+      </div>
+
+      <div 
+        class="flex items-center justify-center absolute -bottom-5 left-1/2 translate-x-[-50%]  p-3 rounded-full bg-white shadow-lg group-hover:-translate-y-10 duration-500 group "
+      >
+          <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 256 221"><path fill="#41B883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36Z"/><path fill="#41B883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0Z"/><path fill="#35495E" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56Z"/>
+          </svg>
+
+          <div class="absolute group-hover:opacity-100 group-hover:scale-100 scale-0 opacity-0 whitespace-nowrap top-[110%] bg-white text-black py-2 px-4 rounded-full">Made with Vue and Node in Typescript</div>
 
       </div>
     
@@ -91,7 +157,8 @@
         <div style="display: flex; flex-wrap: wrap; align-items: center; padding: 20px 0; gap: 15px;">
 
           <div class="icon-stack-container">
-          <svg xmlns="http://www.w3.org/2000/svg" width="37.07" height="32" viewBox="0 0 256 221"><path fill="#41B883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36Z"/><path fill="#41B883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0Z"/><path fill="#35495E" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56Z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" width="37.07" height="32" viewBox="0 0 256 221"><path fill="#41B883" d="M204.8 0H256L128 220.8L0 0h97.92L128 51.2L157.44 0h47.36Z"/><path fill="#41B883" d="m0 0l128 220.8L256 0h-51.2L128 132.48L50.56 0H0Z"/><path fill="#35495E" d="M50.56 0L128 133.12L204.8 0h-47.36L128 51.2L97.92 0H50.56Z"/>
+            </svg>
           </div>
 
         </div>
@@ -235,12 +302,20 @@
       
     </section>
 
+      <div 
+          :class="show ? 'opacity-100 ' : 'opacity-0 -translate-y-5' " 
+          class="fixed text-[13px] w-[250px] bottom-10 left-1/2 px-4 py-2 -ml-[125px] whitespace-nowrap text-center bg-gray-700 text-white rounded-lg font-semibold pointer-events-none duration-200"
+      >
+          ¡Number copied to clipboard!
+      </div>
+
+
   </div>
 
 </template>
 
 <script lang="ts" setup>
-// import {ref} from 'vue'
+import {ref} from 'vue'
 
 
   const openExternal = (url:string) => {
@@ -252,6 +327,26 @@
   const goEmail = () => {
     window.open('mailto:danielcoglitore@gmail.com')
   }
+
+  // clipboard
+    const show = ref(false)
+    const copyLink = () => {
+
+        try{
+
+          navigator.clipboard?.writeText('+56930842821')
+          show.value = true
+
+          setTimeout(() => {
+              show.value = false
+          }, 2000);
+
+        } catch(error){
+            alert(error)
+        }
+        
+    }
+  // clipboard
 
 
 </script>
